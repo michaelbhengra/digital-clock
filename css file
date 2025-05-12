@@ -1,0 +1,67 @@
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      background-color: #333;
+      padding: 10px 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 4px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 10px;
+    }
+    .logo-img{
+      height: 50px;
+      width: 50px;
+      border-radius: 35px;
+    }
+    .main-content{
+       background-image: url('clock logo.jpg');
+       background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    }
+
+    #clock-time{
+      font-size: 100px;
+       background-color: rgb(6, 7, 7);
+       color: white;
+       padding: 20px;
+       
+    }
+      footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: #00ffcc;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+  }
+  #month-year{
+    position: absolute;
+    top: 200px;
+    background-color: #00ffcc;
+    padding: 8px;
+    font-size: 35px;
+  }
