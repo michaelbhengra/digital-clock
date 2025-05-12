@@ -1,0 +1,25 @@
+
+    function updateclock(){
+      let date = new Date();
+      let Hours = String(date.getHours()).padStart(2,'0');
+      let minutes = String(date.getMinutes()).padStart(2,'0');
+      let second = String(date.getSeconds()).padStart(2,'0');
+
+       document.getElementById('clock-time').innerText =`${Hours} : ${minutes} : ${second}`;
+    }
+    setInterval(updateclock, 1000);
+    updateclock();
+
+function updateMonthYear() {
+  let date = new Date();
+  let monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  let month = monthNames[date.getMonth()]; 
+  let day= date.getDate();
+  let year = date.getFullYear();
+
+  document.getElementById('month-year').innerText = `${day} ${month} ${year}`;
+}
+updateMonthYear();
